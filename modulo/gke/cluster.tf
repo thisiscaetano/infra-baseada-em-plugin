@@ -205,7 +205,7 @@ resource "google_container_cluster" "primary" {
       #     local.node_pools_tags["all"],
       #     tags = 
       # )
-      tags = ["permit-internet", "permit-cloud-flare", "permit-apigee"]
+      tags = ["tag1", "tag2", "tag3"]
 
 
       dynamic "workload_metadata_config" {
@@ -370,7 +370,7 @@ resource "google_container_node_pool" "pools" {
       }
     }
 
-    tags = ["permit-internet", "permit-cloud-flare", "permit-apigee"]
+    tags = ["tag1", "tag2", "tag3"]
 
     local_ssd_count = lookup(each.value, "local_ssd_count", 0)
     disk_size_gb    = lookup(each.value, "disk_size_gb", 100)

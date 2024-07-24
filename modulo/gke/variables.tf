@@ -528,7 +528,7 @@ variable "cloud_services_account" {
   default     = "@cloudservices.gserviceaccount.com"
 }
 variable "atlantis" {
-  default = "atlantis-credentials@c4-shared-vpcs-br.iam.gserviceaccount.com"
+  default = "xxx@xxx.iam.gserviceaccount.com"
 }
 variable "project_id_number" {
   type = string
