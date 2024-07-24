@@ -6,7 +6,7 @@ Este módulo Terraform cria um cluster do Google Kubernetes Engine (GKE).
 
 ```
 module "gke" {
-  source                     = "git@bitbucket.org:carrefour_ecommerce/module-tf.git//gke_v2"
+  source                     = "../modulo/gke"
   project_id                 = var.project_id
   project_id_number          = var.project_id_number
   name                       = var.name
